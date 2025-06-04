@@ -1,0 +1,123 @@
+{
+  "mcpServers": {
+    "toolbox": {
+      "command": "cmd",
+      "args": [
+        "/c",
+        "npx",
+        "-y",
+        "@smithery/cli@latest",
+        "run",
+        "@smithery/toolbox",
+        "--key",
+        "af1e9b65-ab60-445f-89a6-2a9e1d7303fb",
+        "--profile",
+        "yummy-dove-oD2ldW"
+      ]
+    },
+    "context7": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@upstash/context7-mcp@latest"
+      ]
+    },
+    "server-sequential-thinking": {
+      "command": "cmd",
+      "args": [
+        "/c",
+        "npx",
+        "-y",
+        "@smithery/cli@latest",
+        "run",
+        "@smithery-ai/server-sequential-thinking",
+        "--key",
+        "af1e9b65-ab60-445f-89a6-2a9e1d7303fb"
+      ]
+    },
+    "vibe-check-mcp-server": {
+      "command": "cmd",
+      "args": [
+        "/c",
+        "npx",
+        "-y",
+        "@smithery/cli@latest",
+        "run",
+        "@PV-Bhat/vibe-check-mcp-server",
+        "--key",
+        "af1e9b65-ab60-445f-89a6-2a9e1d7303fb",
+        "--profile",
+        "yummy-dove-oD2ldW"
+      ]
+    },
+    "cursor10x-mcp": {
+      "command": "cmd",
+      "args": [
+        "/c",
+        "npx",
+        "-y",
+        "@smithery/cli@latest",
+        "run",
+        "@aurda012/cursor10x-mcp",
+        "--key",
+        "af1e9b65-ab60-445f-89a6-2a9e1d7303fb",
+        "--profile",
+        "yummy-dove-oD2ldW"
+      ]
+    },
+    "code-mcp": {
+      "command": "cmd",
+      "args": [
+        "/c",
+        "npx",
+        "-y",
+        "@smithery/cli@latest",
+        "run",
+        "@block/code-mcp",
+        "--key",
+        "af1e9b65-ab60-445f-89a6-2a9e1d7303fb"
+      ]
+    },
+    "notion-api-mcp": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@smithery/cli@latest",
+        "run",
+        "notion-api-mcp",
+        "--key",
+        "af1e9b65-ab60-445f-89a6-2a9e1d7303fb",
+        "--profile",
+        "yummy-dove-oD2ldW"
+      ]
+    },
+    "Windows-Command-Line-MCP-Server": {
+      "command": "cmd",
+      "args": [
+        "/c",
+        "npx",
+        "-y",
+        "@smithery/cli@latest",
+        "run",
+        "@alxspiker/Windows-Command-Line-MCP-Server",
+        "--key",
+        "af1e9b65-ab60-445f-89a6-2a9e1d7303fb"
+      ]
+    },
+    "mem0-memory-mcp": {
+      "command": "cmd",
+      "args": [
+        "/c",
+        "npx",
+        "-y",
+        "@smithery/cli@latest",
+        "run",
+        "@mem0ai/mem0-memory-mcp",
+        "--key",
+        "af1e9b65-ab60-445f-89a6-2a9e1d7303fb",
+        "--profile",
+        "yummy-dove-oD2ldW"
+      ]
+    }
+  }
+}
