@@ -1,0 +1,3 @@
+[submodule "open-codex"]
+	path = open-codex
+	url = https://github.com/AcidicSoil/open-codex.git
