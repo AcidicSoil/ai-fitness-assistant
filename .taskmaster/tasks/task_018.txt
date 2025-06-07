@@ -1,0 +1,11 @@
+# Task ID: 18
+# Title: Push Notification System
+# Status: pending
+# Dependencies: 3, 17
+# Priority: medium
+# Description: Implement smart push notifications for workout reminders and motivational messages.
+# Details:
+Set up Firebase Cloud Messaging, create notification scheduling system, implement smart reminder algorithms, create personalized motivational messages, add notification preferences management, and implement snooze/reschedule functionality.
+
+# Test Strategy:
+

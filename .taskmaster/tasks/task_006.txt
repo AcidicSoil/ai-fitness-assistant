@@ -1,0 +1,11 @@
+# Task ID: 6
+# Title: OCR Integration & Text Extraction
+# Status: pending
+# Dependencies: 5
+# Priority: high
+# Description: Integrate Google Vision AI for extracting workout text from uploaded images and parsing exercise data.
+# Details:
+Integrate Google Vision API for text detection, implement text parsing algorithms to extract exercise names, sets, reps, and instructions, create data validation and correction mechanisms, and handle various image formats and orientations.
+
+# Test Strategy:
+

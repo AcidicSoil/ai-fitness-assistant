@@ -1,0 +1,11 @@
+# Task ID: 17
+# Title: Workout Scheduling Interface
+# Status: pending
+# Dependencies: 16, 9
+# Priority: medium
+# Description: Create an intuitive scheduling interface for single workouts and multi-week programs.
+# Details:
+Design calendar view for workout scheduling, implement drag-and-drop scheduling, create recurring workout setup, implement program scheduling with automatic progression, and add schedule conflict detection and resolution.
+
+# Test Strategy:
+

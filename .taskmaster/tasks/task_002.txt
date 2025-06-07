@@ -1,0 +1,11 @@
+# Task ID: 2
+# Title: Database Schema Design & Setup
+# Status: pending
+# Dependencies: 1
+# Priority: high
+# Description: Design and implement the core database schema for users, workouts, exercises, and progress tracking.
+# Details:
+Design PostgreSQL database schema including tables for Users, Workouts, Exercises, Programs, Progress, Calendar Events, and relationships. Create migration scripts, set up database connection pooling, and implement basic CRUD operations.
+
+# Test Strategy:
+

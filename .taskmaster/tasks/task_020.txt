@@ -1,0 +1,11 @@
+# Task ID: 20
+# Title: User Profile & Settings
+# Status: pending
+# Dependencies: 10
+# Priority: low
+# Description: Implement comprehensive user profile management with preferences and settings.
+# Details:
+Create user profile editing interface, implement fitness level and goal preferences, add equipment availability settings, create notification preferences, implement data export functionality, and add account management features.
+
+# Test Strategy:
+

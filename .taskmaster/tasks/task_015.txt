@@ -1,0 +1,11 @@
+# Task ID: 15
+# Title: Goal Setting & Management
+# Status: pending
+# Dependencies: 14
+# Priority: medium
+# Description: Create a comprehensive goal setting system with tracking and adaptive recommendations.
+# Details:
+Design goal creation interface with different goal types (frequency, strength, endurance), implement progress visualization, create achievement badges and milestones, add adaptive goal recommendations based on progress, and implement goal sharing features.
+
+# Test Strategy:
+

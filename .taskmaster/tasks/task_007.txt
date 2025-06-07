@@ -1,0 +1,11 @@
+# Task ID: 7
+# Title: AI Workout Generation System
+# Status: pending
+# Dependencies: 4
+# Priority: medium
+# Description: Implement AI-powered workout generation using OpenAI GPT API based on user goals and preferences.
+# Details:
+Integrate OpenAI GPT API for workout generation, create prompt engineering for personalized workout creation, implement goal-based workout customization (strength, cardio, flexibility), equipment availability consideration, and difficulty level adjustment.
+
+# Test Strategy:
+
