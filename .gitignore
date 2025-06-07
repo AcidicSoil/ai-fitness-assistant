@@ -10,7 +10,7 @@ dev-debug.log
 node_modules/
 
 # Environment variables
-.env
+
 
 # Editor directories and files
 .idea
@@ -26,4 +26,4 @@ node_modules/
 
 # Task files
 tasks.json
-tasks/ 
+tasks/

@@ -4,6 +4,6 @@ module.exports = {
   apps: ["frontend", "api"],
   backend: "api",
   model: "qwen3-4b-128k",
-  provider: "lmstudio",
+  provider: "ollama",
   approvalMode: "full-auto",
 };

@@ -1,9 +1,9 @@
 {
   "models": {
     "main": {
-      "provider": "openrouter",
-      "modelId": "deepseek/deepseek-chat-v3-0324:free",
-      "maxTokens": 120000,
+      "provider": "openai",
+      "modelId": "qwen3-4b-128k",
+      "maxTokens": 30000,
       "temperature": 0.2
     },
     "research": {
