@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "main": "codex.config.js",
   "scripts": {
-    "test": "node ./tests/test-runner.js"
+    "test": "jest"
   },
   "repository": {
     "type": "git",
@@ -20,5 +20,8 @@
   "dependencies": {
     "claude-task-master": "^1.6.4",
     "task-master-ai": "^0.16.1"
+  },
+  "devDependencies": {
+    "jest": "^29.7.0"
   }
 }

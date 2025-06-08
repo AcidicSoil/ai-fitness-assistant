@@ -15,13 +15,13 @@ Keep your real API keys out of version control.
 
 ## Running Tests
 
-Tests are not yet implemented, but a basic test runner has been added to provide a placeholder entry point. Execute the following command to run the test script:
+Automated tests are implemented with [Jest](https://jestjs.io/). Execute the following command to run the test suite:
 
 ```bash
 npm test
 ```
 
-This runs `node ./tests/test-runner.js`, which currently prints a message and exits successfully. Replace the contents of `tests/test-runner.js` with real tests as the project evolves.
+This runs Jest and executes the tests located in the `tests` directory.
 
 ## Viewing Task Details
 
