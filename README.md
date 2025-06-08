@@ -2,14 +2,16 @@
 
 This project is a starting point for building a fitness assistant powered by various Task Master tools.
 
-## Installation
+## Configuration
 
-1. Ensure you have **Node.js 18 or later** installed.
-2. Install the project dependencies:
+The repository ships with a `.env` file that contains placeholder values for API keys. Copy this file locally and add your own credentials before running any scripts:
 
 ```bash
-npm install
+cp .env .env.local
+# Edit .env.local and fill in your API keys
 ```
+
+Keep your real API keys out of version control.
 
 ## Running Tests
 
