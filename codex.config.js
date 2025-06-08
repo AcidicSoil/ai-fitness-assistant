@@ -5,5 +5,5 @@ module.exports = {
   backend: "api",
   model: "qwen3-4b-128k",
   provider: "ollama",
-  approvalMode: "full-auto",
+  approvalMode: "suggest",
 };

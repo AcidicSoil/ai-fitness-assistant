@@ -1,3 +1,8 @@
+Starting Task Master in Codex
+Once the API keys are filled in, Codex can start the MCP server with the configured entry (task-master-ai). From Codex’s Command Palette or terminal, run the MCP start command (e.g., codex mcp start task-master-ai) so Task Master tools become available. You can then use commands like next_task, get_tasks, etc., directly from Codex or via the CLI (task-master ...).
+
+This setup allows Codex to invoke Task Master AI automatically whenever you trigger a command, enabling task-driven workflows within this project.
+
 <task_list>
 codex task:add "Update .cursor/mcp.json with valid API keys from .env.example for the task-master-ai server."
 codex task:add "Install task-master CLI globally using 'npm install -g claude-task-master' or prepare to run with npx."

@@ -1,0 +1,24 @@
+{
+  "name": "_ai-fitness-assistant",
+  "version": "1.0.0",
+  "main": "codex.config.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AcidicSoil/ai-fitness-assistant.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AcidicSoil/ai-fitness-assistant/issues"
+  },
+  "homepage": "https://github.com/AcidicSoil/ai-fitness-assistant#readme",
+  "description": "",
+  "dependencies": {
+    "claude-task-master": "^1.6.4",
+    "task-master-ai": "^0.16.1"
+  }
+}
