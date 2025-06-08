@@ -2,6 +2,17 @@
 
 This project is a starting point for building a fitness assistant powered by various Task Master tools.
 
+## Configuration
+
+The repository ships with a `.env` file that contains placeholder values for API keys. Copy this file locally and add your own credentials before running any scripts:
+
+```bash
+cp .env .env.local
+# Edit .env.local and fill in your API keys
+```
+
+Keep your real API keys out of version control.
+
 ## Running Tests
 
 Tests are not yet implemented, but a basic test runner has been added to provide a placeholder entry point. Execute the following command to run the test script:
