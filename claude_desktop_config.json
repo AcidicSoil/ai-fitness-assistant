@@ -10,7 +10,7 @@
         "run",
         "@smithery/toolbox",
         "--key",
-        "af1e9b65-ab60-445f-89a6-2a9e1d7303fb",
+        "$MCP_KEY",
         "--profile",
         "yummy-dove-oD2ldW"
       ]
@@ -32,7 +32,7 @@
         "run",
         "@smithery-ai/server-sequential-thinking",
         "--key",
-        "af1e9b65-ab60-445f-89a6-2a9e1d7303fb"
+        "$MCP_KEY"
       ]
     },
     "vibe-check-mcp-server": {
@@ -45,7 +45,7 @@
         "run",
         "@PV-Bhat/vibe-check-mcp-server",
         "--key",
-        "af1e9b65-ab60-445f-89a6-2a9e1d7303fb",
+        "$MCP_KEY",
         "--profile",
         "yummy-dove-oD2ldW"
       ]
@@ -60,7 +60,7 @@
         "run",
         "@aurda012/cursor10x-mcp",
         "--key",
-        "af1e9b65-ab60-445f-89a6-2a9e1d7303fb",
+        "$MCP_KEY",
         "--profile",
         "yummy-dove-oD2ldW"
       ]
@@ -75,7 +75,7 @@
         "run",
         "@block/code-mcp",
         "--key",
-        "af1e9b65-ab60-445f-89a6-2a9e1d7303fb"
+        "$MCP_KEY"
       ]
     },
     "notion-api-mcp": {
@@ -86,7 +86,7 @@
         "run",
         "notion-api-mcp",
         "--key",
-        "af1e9b65-ab60-445f-89a6-2a9e1d7303fb",
+        "$MCP_KEY",
         "--profile",
         "yummy-dove-oD2ldW"
       ]
@@ -101,7 +101,7 @@
         "run",
         "@alxspiker/Windows-Command-Line-MCP-Server",
         "--key",
-        "af1e9b65-ab60-445f-89a6-2a9e1d7303fb"
+        "$MCP_KEY"
       ]
     },
     "mem0-memory-mcp": {
@@ -114,7 +114,7 @@
         "run",
         "@mem0ai/mem0-memory-mcp",
         "--key",
-        "af1e9b65-ab60-445f-89a6-2a9e1d7303fb",
+        "$MCP_KEY",
         "--profile",
         "yummy-dove-oD2ldW"
       ]
