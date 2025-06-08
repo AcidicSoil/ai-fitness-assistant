@@ -2,6 +2,15 @@
 
 This project is a starting point for building a fitness assistant powered by various Task Master tools.
 
+## Installation
+
+1. Ensure you have **Node.js 18 or later** installed.
+2. Install the project dependencies:
+
+```bash
+npm install
+```
+
 ## Running Tests
 
 Tests are not yet implemented, but a basic test runner has been added to provide a placeholder entry point. Execute the following command to run the test script:
