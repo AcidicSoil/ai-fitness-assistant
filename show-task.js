@@ -27,4 +27,3 @@ try {
   console.error('Error reading task file:', error.message);
   process.exit(1);
 }
-
