@@ -2,22 +2,19 @@
 
 ## 📘 Purpose
 
-This file provides AI agents (e.g., Codex, Claude, GPT-4) and developers with all the context needed to work efficiently in this monorepo. It outlines project structure, setup steps, agent prompting conventions, and Codex-specific execution instructions.
+This file provides AI agents (e.g., Codex, Claude, GPT-4) and developers the full context to work effectively in this repo. It outlines project structure, setup instructions, contribution rules, and Codex environment configuration. Follow this file to operate within the AI Fitness Assistant project intelligently and efficiently.
 
 ---
 
-## 📂 Repository Overview
+## 🗂 Repository Overview
 
-This monorepo powers the **AI Fitness Assistant** with a split between mobile-first client logic and API+AI services:
+* `src/`: Mobile and backend logic (React Native, Express, AI workflows)
+* `packages/`: Utilities (OCR parsers, AI fitness planner, database models)
+* `scripts/`: DevOps and automation tooling
+* `docs/`: Markdown plans, masterplan.md, architecture overviews
+* `tests/`: Unit and E2E tests (Vitest, Detox, possibly Playwright for web)
 
-* `frontend/`: React Native app for iOS/Android
-* `backend/`: Node.js + Express server with AI/OCR integrations
-
-Additional directories:
-
-* `scripts/`: Utility scripts and automation
-* `docs/`: Product planning and PRDs
-* `tests/`: Shared Vitest-based test utilities
+Actively evolving areas include `src/ai/`, `packages/parser/`, and `src/features/workout`.
 
 ---
 
@@ -27,21 +24,21 @@ To run this repo in a Codex execution environment:
 
 ### Container
 
-Use: `universal` (Ubuntu 24.04 + pnpm + Node.js)
+Use: `universal`
+Ubuntu 24.04 base with support for modern Node + Python stacks.
 
 ### Setup Script
 
 ```bash
-# Codex monorepo setup for AI Fitness App
+# Setup script for Codex agents
 pnpm install
-pnpm --filter frontend run build
-pnpm --filter backend run build
-pnpm test
+pnpm dlx turbo run build
+pnpm dlx turbo run test
 ```
 
 ### Agent Internet Access
 
-Turn **ON** to fetch npm packages and API models.
+✅ Turn ON (Required for downloading model weights, npm modules, and testing APIs)
 
 ---
 
@@ -53,104 +50,94 @@ Turn **ON** to fetch npm packages and API models.
 pnpm test
 ```
 
-### Filter by workspace:
+### Filter by package:
 
 ```bash
-pnpm --filter frontend test
-pnpm --filter backend test
+pnpm turbo run test --filter @fitness/parser
 ```
 
-### Target specific test:
+### Run specific test:
 
 ```bash
-pnpm vitest run -t "<test name>"
+pnpm vitest run -t "OCR parses Pinterest screenshot"
 ```
 
-### Lint code:
+### Linting:
 
 ```bash
-pnpm lint --filter frontend
-pnpm lint --filter backend
+pnpm lint --filter src/ai
 ```
 
-> ✅ Codex agents must ensure tests and linting pass before merging code.
+> ✅ CI is enforced via GitHub Actions. All PRs must pass tests and linting.
 
 ---
 
 ## 🚀 PR Instructions
 
-* **Title format**: `[frontend] Parse board image` or `[backend] Add GPT workout endpoint`
-* Keep changes atomic and explain reasoning with markdown-style comments if complex.
-* Avoid bundling unrelated changes.
+* **Title format**: `[parser] Improve OCR for handwritten images`
+* One task per PR. Keep diffs small and well-described.
+* Include `tests/` for all new or modified functionality.
+* Use inline comments to explain AI logic or fuzzy decisions.
 
 ---
 
 ## 🤖 Prompting Codex
 
-Effective Codex prompts:
+Codex performs best with structured directives.
 
 ### ✅ Good Prompts:
 
-* "Parse workout images in `backend/src/ocr/parse.ts` using Google Vision API."
-* "Generate workouts in `backend/src/ai/generator.ts` using GPT-4. Use goals and equipment as inputs."
-* "Add tracking UI to `frontend/src/components/WorkoutPlayer.tsx` to mark exercises complete."
+* "Parse workout from `tests/assets/pinterest-board1.png` and extract sets, reps, weights."
+* "Improve GPT-based routine generator to avoid cardio repetitions. Validate output with `vitest`."
 
 ### ❌ Avoid:
 
-* "Improve app"
-* "Refactor everything"
+* "Fix everything in src/"
+* "Make it smarter"
 
-### Debugging Aids:
+### Debugging Tips:
 
-* Include stack traces in prompts.
-* Use logs or example input/output.
-* Add `TODO:` comments in code for unclear steps.
+* Include raw OCR or GPT output in prompt for context
+* Use reproducible test cases with known inputs
+* Enable logs via `DEBUG=ocr:* pnpm test`
 
 ---
 
 ## 🧠 Contribution Guidelines
 
-* TypeScript (strict mode) enforced in all workspaces.
-* All new features must have test coverage.
-* Format with:
-
-```bash
-pnpm format
-```
-
-* Use composable, clean code. Follow existing style.
+* Prefer modular, testable components
+* All parsers and AI logic should be stateless
+* Maintain strict TypeScript settings
+* Follow mobile-first UI conventions from the PRD
 
 ---
 
-## 🧰 Codex-Compatible Configurations
+## 🧹 Related Configurations
 
-* `.github/workflows/`: GitHub Actions CI
-* `pnpm-workspace.yaml`: Declares shared context
-* `turbo.json`: (if present) Speed up builds/tests
-* `vitest.config.ts`: Unified test runner config
-
----
-
-## 🔍 Optimization Tasks for Codex
-
-Codex can help with:
-
-* Backend OCR retry logic
-* AI prompt chaining for smarter workouts
-* Creating demo flows in the mobile app
-* Adding calendar sync code using Google API
-* Building progress analytics using PostgreSQL queries
+* `.github/workflows`: CI/CD with lint/test jobs
+* `turbo.json`: Task caching across workspaces
+* `docs/masterplan.md`: Strategic roadmap and milestones
+* `scripts/bootstrap.sh`: Local dev bootstrapping (if exists)
 
 ---
 
-## 🥺 Example Prompt for Codex
+## 🔍 Optimization Opportunities
+
+Codex agents can help:
+
+* Improve OCR for mixed fonts (e.g. Pinterest handwriting)
+* Expand GPT prompts for better goal-specific routines
+* Build test images and synthetic datasets
+* Translate user goals into structured fitness plans
+* Localize UI flows with multilingual support
+
+---
+
+## 🧪 Example Prompt for Codex
 
 ```markdown
-You are working in `backend/src/ai/generator.ts`.
-
-Improve the workout plan generator to support bodyweight-only workouts and adjust difficulty dynamically based on previous performance.
-
-Test with `pnpm --filter backend test`. Update docs in `docs/README.md`.
+You are working in `/packages/parser/ocr.ts`.
+Add fallback logic to use AWS Textract if Google Vision fails.
+Then update `tests/ocr-handling.test.ts` to simulate fallback.
+Validate with `pnpm test --filter @fitness/parser`.
 ```
-
----
